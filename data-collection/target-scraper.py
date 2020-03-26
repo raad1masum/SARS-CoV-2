@@ -14,7 +14,7 @@ uClient.close()
 page_soup = soup(page_html, "html.parser")
 
 # grabs each product
-containers = page_soup.findAll("div",{"class":"ProductCardBody-n7791b-0 styles__StyledProductCardBody-e5kry1-3 mIJeb"})
+containers = page_soup.findAll("div",{"class":"styles__StyledDetailsWrapper-e5kry1-8 dnTOUV h-display-flex h-flex-direction-col flex-grow-one full-width"})
 
 for container in containers:
     product_container = container.findAll("a", {"class": "Link-sc-1khjl8b-0 styles__StyledTitleLink-e5kry1-5 cPukFm h-display-block h-text-bold h-text-bs flex-grow-one"})
