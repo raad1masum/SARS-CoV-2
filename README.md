@@ -1,3 +1,3 @@
 # SARS-CoV-2
 
-Tracks the stock of in-need supplies during the quarintine at locations near you using a webscraper.
+Tracks the availabilty of products for online purchase.
