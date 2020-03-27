@@ -17,7 +17,7 @@ page_soup = soup(page_html, "html.parser")
 containers = page_soup.findAll("div",{"class":"ProductGrid-inline_7ebuPJ ProductGrid-inline_6uaOga"})
 
 for container in containers:
-    #product_container = container.findAll("a", {"href": "PrimaryLink_1RLwvm inline-block"})
+    product_container = container.findAll("a", {"href": "PrimaryLink_1RLwvm inline-block"})
     price_container = container.findAll("span", {"class": "Price_3HnIBb block"})
     if len(price_container) > 0:
         price = price_container[0].span.text.strip()
