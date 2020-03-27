@@ -22,7 +22,6 @@ for container in containers:
     if len(price_container) > 0:
         price = price_container[0].span.text.strip()
         product = product_container[0].span.text.strip()
-
-    print("Product: " + product)
-    print("Price: " + price)
-    print("")
+        print("Product: " + product)
+        print("Price: " + price)
+        print("")
