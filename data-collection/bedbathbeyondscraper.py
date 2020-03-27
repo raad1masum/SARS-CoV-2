@@ -14,11 +14,11 @@ uClient.close()
 page_soup = soup(page_html, "html.parser")
 
 # grabs each product
-containers = page_soup.findAll("div",{"class":"ProductGrid-inline_7ebuPJ ProductGrid-inline_6uaOga"})
+containers = page_soup.findAll("div",{"class":"ProductGrid-inline_7ebuPJ"})
 
 for container in containers:
-    product_container = container.findAll("a", {"href": "PrimaryLink_1RLwvm inline-block"})
-    price_container = container.findAll("span", {"class": "Price_3HnIBb block"})
+    product_container = container.findAll("a", {"class": "PrimaryLink_1RLwvm"})
+    price_container = container.findAll("span", {"class": "Price_3HnIBb"})
     if len(price_container) > 0:
         price = price_container[0].span.text.strip()
         product = product_container[0].span.text.strip()
